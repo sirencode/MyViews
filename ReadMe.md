@@ -1,13 +1,26 @@
 #自定义View
 ##步骤：
-###1 获取自定义属性值
+### 1 获取自定义属性值
+####其中属性的类型一般分为以下几种：
++ reference：某一资源ID。
++ color：颜色值。
++ boolean：布尔值。
++ dimension：尺寸值。注意,这里如果是dp那就会做像素转换。
++ float：浮点值。
++ integer：整型值。
++ string：字符串
++ fraction：百分数。
++ enum：枚举值。
++ flag：自定义,里面对应了自定义的属性值。
++ reference|color：颜色的资源文件。
++ reference|boolean：布尔值的资源文件
 ```java
 <declare-styleable name="CustomSwitchView">
      <attr name="switch_background" format="reference" />
      <attr name="switch_foreground" format="reference" />
      <attr name="switch_state" format="boolean" />
 </declare-styleable>
-        
+xmlns:customswitch="http://schemas.android.com/apk/res-auto"
 customswitch:switch_background="@drawable/switch_background"
 customswitch:switch_foreground="@drawable/switch_foreground"
 customswitch:switch_state="true"

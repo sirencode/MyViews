@@ -15,10 +15,6 @@ public class MainActivity extends Activity {
 
     private void initViews(){
         CustomSwitchView buttonCSView = (CustomSwitchView) findViewById(R.id.csv_button);
-//        // 设置背景图
-//        buttonCSView.setBackgroundPic(R.drawable.switch_background);
-//        // 设置前景图
-//        buttonCSView.setForegroundPic(R.drawable.switch_foreground);
         // 绑定监听事件
         buttonCSView.setOnSwitchStateUpdateListener(new CustomSwitchView.OnSwitchStateUpdateListener() {
 

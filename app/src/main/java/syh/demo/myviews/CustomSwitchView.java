@@ -11,14 +11,7 @@ import android.view.View;
 
 /**
  * Created by Diablo on 16/5/19.
- * 1 获取自定义属性值
- * 2 初始化一些初始值
- * 3 在onMeasure测量View的大小，亦可设置view的大小
- * 4 在onLayout里面获取子view的大小
- * 5 onDraw 绘制具体的View，动画效果可以通过刷新实现
- *   draw->刷新->draw->刷新......
- * 6 onTouch 获取，滑动距离（x,y），invalidate()刷新UI
- * 7 自定义回调接口，在onTouch中实现
+ * 自定义Switch控件
  */
 public class CustomSwitchView extends View{
 
